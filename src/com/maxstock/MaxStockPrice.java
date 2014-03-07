@@ -28,7 +28,7 @@ public class MaxStockPrice {
 		int[] maxArr = null;
 		String[] companies = null;
 		try {
-			BufferedReader br = new BufferedReader(new FileReader("E:/eclipse-jee-juno-win32-x86_64/workspace_new/global_logic/src/com/globallogic/test.csv"));
+			BufferedReader br = new BufferedReader(new FileReader(System.getProperty("user.dir") +"/src/com/maxstock/test.csv"));
 			while((line = br.readLine()) != null) {
 				String[] data = line.split(separator);
 				if(header) {
